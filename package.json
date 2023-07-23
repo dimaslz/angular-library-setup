@@ -1,0 +1,28 @@
+{
+  "name": "angular-library-setup",
+  "version": "1.0.0",
+  "description": "angular library template",
+  "scripts": {
+    "lint": "yarn lint:library && yarn lint:playground",
+    "lint:library": "yarn workspace your-library lint library",
+    "lint:playground": "yarn workspace playground lint",
+
+    "test": "yarn workspace your-library test",
+    "test:library": "yarn workspace your-library test:library",
+    "test:playground": "yarn workspace your-library test:playground"
+  },
+  "author": {
+    "email": "me@dimaslz.io",
+    "name": "Dimas López",
+    "url": "https://dimaslz.com"
+  },
+  "repository": {
+    "url": "https://github.com/dimaslz/angular-library-setup.git",
+    "type": "github"
+  },
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}
